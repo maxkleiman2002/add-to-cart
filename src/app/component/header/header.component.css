@@ -1,0 +1,36 @@
+.d-flex i{
+  font-size: 40px;
+  color: #fff;
+}
+strong{
+  font-size:30px;
+  color: #fff;
+}
+.form-control{
+  border-radius: 3px;
+  width: 300%;
+  margin-left: 8%;
+}
+.search-icon{
+  position: absolute;
+  z-index: 10;
+  right: 40%;
+  top:26.5px;
+  color: #B0C4DE;
+}
+
+button.btn-primary i{
+  font-size: 30px;
+
+}
+.bg-danger{
+  font-size: 10px;
+}
+.navbar-brand{
+  margin-left: 17%;
+}
+
+.form-group{
+  margin-left: 7%;
+  margin-top: 1%;
+}

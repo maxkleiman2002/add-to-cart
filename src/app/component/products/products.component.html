@@ -1,0 +1,56 @@
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+    <div class="item">
+      <a >
+        <img src="https://png.pngtree.com/png-clipart/20210418/original/pngtree-white-gift-box-png-image_6233990.png" alt="">
+        <h6>All products</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a >
+        <img src="https://dlcdnwebimgs.asus.com/gain/5670817f-14c6-4ad9-b036-441be4e12284/" alt="ComputerNotebook">
+        <h6>Computer And Notebooks</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a >
+        <img src="https://content2.rozetka.com.ua/goods/images/big/297851447.png" alt="Smartphone">
+        <h6>Smartphones</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a >
+        <img src="https://rozdrib.com.ua/wp-content/uploads/2023/04/Xiaomi-A2-3222.png" alt="Tv">
+        <h6>Tv and Appliances</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a >
+        <img src="https://dlcdnwebimgs.asus.com/gain/1B5E5B13-DB17-40F5-9F71-C4127C6C7693" alt="Gamers">
+        <h6>Items for Gamers</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a >
+        <img src="https://cdek.shopping/storage/products/78j1901r-sky-captain/78j1901r-cjm-fnt.png" alt="Fashion">
+        <h6>Fashion</h6>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-3">
+        <img class="container-img" src="{{item.image}}" alt="Item Image">
+        <h5 class="container-title">{{item.title}}</h5>
+        <p class="container-description">{{item.description}}</p>
+        <p class="container-price"><strong>Price: </strong> ${{item.price}}</p>
+        <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+      </div>
+    </ng-container>
+
+  </div>
+</div>
